@@ -1,0 +1,115 @@
+07/09/2022 22:46:48 - INFO - __main__ -   Working directory: /content/drive/MyDrive/GoEmotions
+07/09/2022 22:46:48 - INFO - __main__ -   This is the complete list of arguments used:
+07/09/2022 22:46:48 - INFO - __main__ -   ===========================================
+07/09/2022 22:46:48 - INFO - __main__ -   path_to_input_file: ./data/full_train_input.csv
+07/09/2022 22:46:48 - INFO - __main__ -   path_to_test_file: ./data/test_input.csv
+07/09/2022 22:46:48 - INFO - __main__ -   max_len: 200
+07/09/2022 22:46:48 - INFO - __main__ -   train_batch_size: 32
+07/09/2022 22:46:48 - INFO - __main__ -   val_batch_size: 16
+07/09/2022 22:46:48 - INFO - __main__ -   epochs: 4
+07/09/2022 22:46:48 - INFO - __main__ -   learning_rate: 1e-05
+07/09/2022 22:46:48 - INFO - __main__ -   ===========================================
+
+07/09/2022 22:46:48 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /root/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+07/09/2022 22:47:09 - INFO - __main__ -   TRAIN Dataset: (48836, 2)
+07/09/2022 22:47:09 - INFO - __main__ -   TEST Dataset: (5427, 2)
+07/09/2022 22:47:09 - INFO - __main__ -   ===========================================
+07/09/2022 22:47:09 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /root/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+07/09/2022 22:47:09 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+07/09/2022 22:47:09 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/bert-base-uncased-pytorch_model.bin from cache at /root/.cache/torch/transformers/f2ee78bdd635b758cc0a12352586868bef80e47401abe4c4fcc3832421e7338b.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+07/09/2022 22:47:11 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing BertModel.
+
+07/09/2022 22:47:11 - INFO - transformers.modeling_utils -   All the weights of BertModel were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+07/09/2022 22:47:15 - INFO - __main__ -   0 	 Epoch: 0, Loss:  0.8035292029380798
+07/09/2022 22:48:56 - INFO - __main__ -   100 	 Epoch: 0, Loss:  0.3758026361465454
+07/09/2022 22:50:42 - INFO - __main__ -   200 	 Epoch: 0, Loss:  0.31888383626937866
+07/09/2022 22:52:30 - INFO - __main__ -   300 	 Epoch: 0, Loss:  0.36372047662734985
+07/09/2022 22:54:18 - INFO - __main__ -   400 	 Epoch: 0, Loss:  0.3137446939945221
+07/09/2022 22:56:07 - INFO - __main__ -   500 	 Epoch: 0, Loss:  0.2468646764755249
+07/09/2022 22:57:55 - INFO - __main__ -   600 	 Epoch: 0, Loss:  0.24319955706596375
+07/09/2022 22:59:43 - INFO - __main__ -   700 	 Epoch: 0, Loss:  0.2415882647037506
+07/09/2022 23:01:32 - INFO - __main__ -   800 	 Epoch: 0, Loss:  0.27178964018821716
+07/09/2022 23:03:20 - INFO - __main__ -   900 	 Epoch: 0, Loss:  0.25028377771377563
+07/09/2022 23:05:09 - INFO - __main__ -   1000 	 Epoch: 0, Loss:  0.27095043659210205
+07/09/2022 23:06:57 - INFO - __main__ -   1100 	 Epoch: 0, Loss:  0.19957835972309113
+07/09/2022 23:08:46 - INFO - __main__ -   1200 	 Epoch: 0, Loss:  0.2734309136867523
+07/09/2022 23:10:34 - INFO - __main__ -   1300 	 Epoch: 0, Loss:  0.24890679121017456
+07/09/2022 23:12:23 - INFO - __main__ -   1400 	 Epoch: 0, Loss:  0.28357425332069397
+07/09/2022 23:14:11 - INFO - __main__ -   1500 	 Epoch: 0, Loss:  0.2904103994369507
+07/09/2022 23:14:39 - INFO - __main__ -   ===========================================
+07/09/2022 23:14:39 - INFO - __main__ -   0 	 Epoch: 1, Loss:  0.2268199622631073
+07/09/2022 23:16:28 - INFO - __main__ -   100 	 Epoch: 1, Loss:  0.2359478771686554
+07/09/2022 23:18:16 - INFO - __main__ -   200 	 Epoch: 1, Loss:  0.2219201773405075
+07/09/2022 23:20:05 - INFO - __main__ -   300 	 Epoch: 1, Loss:  0.1906033456325531
+07/09/2022 23:21:53 - INFO - __main__ -   400 	 Epoch: 1, Loss:  0.2096446454524994
+07/09/2022 23:23:41 - INFO - __main__ -   500 	 Epoch: 1, Loss:  0.21765214204788208
+07/09/2022 23:25:30 - INFO - __main__ -   600 	 Epoch: 1, Loss:  0.2671060562133789
+07/09/2022 23:27:18 - INFO - __main__ -   700 	 Epoch: 1, Loss:  0.17970477044582367
+07/09/2022 23:29:07 - INFO - __main__ -   800 	 Epoch: 1, Loss:  0.1591855138540268
+07/09/2022 23:30:55 - INFO - __main__ -   900 	 Epoch: 1, Loss:  0.16338902711868286
+07/09/2022 23:32:43 - INFO - __main__ -   1000 	 Epoch: 1, Loss:  0.17190434038639069
+07/09/2022 23:34:32 - INFO - __main__ -   1100 	 Epoch: 1, Loss:  0.21446837484836578
+07/09/2022 23:36:20 - INFO - __main__ -   1200 	 Epoch: 1, Loss:  0.1826801747083664
+07/09/2022 23:38:09 - INFO - __main__ -   1300 	 Epoch: 1, Loss:  0.22742904722690582
+07/09/2022 23:39:57 - INFO - __main__ -   1400 	 Epoch: 1, Loss:  0.16626425087451935
+07/09/2022 23:41:46 - INFO - __main__ -   1500 	 Epoch: 1, Loss:  0.18866696953773499
+07/09/2022 23:42:14 - INFO - __main__ -   ===========================================
+07/09/2022 23:42:14 - INFO - __main__ -   0 	 Epoch: 2, Loss:  0.1479852795600891
+07/09/2022 23:44:02 - INFO - __main__ -   100 	 Epoch: 2, Loss:  0.20872905850410461
+07/09/2022 23:45:51 - INFO - __main__ -   200 	 Epoch: 2, Loss:  0.16841164231300354
+07/09/2022 23:47:39 - INFO - __main__ -   300 	 Epoch: 2, Loss:  0.16413453221321106
+07/09/2022 23:49:27 - INFO - __main__ -   400 	 Epoch: 2, Loss:  0.2549590468406677
+07/09/2022 23:51:16 - INFO - __main__ -   500 	 Epoch: 2, Loss:  0.1672244518995285
+07/09/2022 23:53:05 - INFO - __main__ -   600 	 Epoch: 2, Loss:  0.21829871833324432
+07/09/2022 23:54:53 - INFO - __main__ -   700 	 Epoch: 2, Loss:  0.2184027135372162
+07/09/2022 23:56:41 - INFO - __main__ -   800 	 Epoch: 2, Loss:  0.11500883847475052
+07/09/2022 23:58:29 - INFO - __main__ -   900 	 Epoch: 2, Loss:  0.22064785659313202
+07/10/2022 00:00:18 - INFO - __main__ -   1000 	 Epoch: 2, Loss:  0.15717916190624237
+07/10/2022 00:02:06 - INFO - __main__ -   1100 	 Epoch: 2, Loss:  0.19539353251457214
+07/10/2022 00:03:55 - INFO - __main__ -   1200 	 Epoch: 2, Loss:  0.17772595584392548
+07/10/2022 00:05:43 - INFO - __main__ -   1300 	 Epoch: 2, Loss:  0.12734819948673248
+07/10/2022 00:07:31 - INFO - __main__ -   1400 	 Epoch: 2, Loss:  0.19840075075626373
+07/10/2022 00:09:20 - INFO - __main__ -   1500 	 Epoch: 2, Loss:  0.23953752219676971
+07/10/2022 00:09:48 - INFO - __main__ -   ===========================================
+07/10/2022 00:09:48 - INFO - __main__ -   0 	 Epoch: 3, Loss:  0.1775781810283661
+07/10/2022 00:11:37 - INFO - __main__ -   100 	 Epoch: 3, Loss:  0.100150927901268
+07/10/2022 00:13:25 - INFO - __main__ -   200 	 Epoch: 3, Loss:  0.11509617418050766
+07/10/2022 00:15:13 - INFO - __main__ -   300 	 Epoch: 3, Loss:  0.1452566236257553
+07/10/2022 00:17:01 - INFO - __main__ -   400 	 Epoch: 3, Loss:  0.16517089307308197
+07/10/2022 00:18:50 - INFO - __main__ -   500 	 Epoch: 3, Loss:  0.1485246866941452
+07/10/2022 00:20:38 - INFO - __main__ -   600 	 Epoch: 3, Loss:  0.12895433604717255
+07/10/2022 00:22:27 - INFO - __main__ -   700 	 Epoch: 3, Loss:  0.1720002442598343
+07/10/2022 00:24:15 - INFO - __main__ -   800 	 Epoch: 3, Loss:  0.21084347367286682
+07/10/2022 00:26:03 - INFO - __main__ -   900 	 Epoch: 3, Loss:  0.1921224296092987
+07/10/2022 00:27:52 - INFO - __main__ -   1000 	 Epoch: 3, Loss:  0.12867331504821777
+07/10/2022 00:29:40 - INFO - __main__ -   1100 	 Epoch: 3, Loss:  0.1557549089193344
+07/10/2022 00:31:29 - INFO - __main__ -   1200 	 Epoch: 3, Loss:  0.20120778679847717
+07/10/2022 00:33:17 - INFO - __main__ -   1300 	 Epoch: 3, Loss:  0.14040835201740265
+07/10/2022 00:35:06 - INFO - __main__ -   1400 	 Epoch: 3, Loss:  0.1894894540309906
+07/10/2022 00:36:54 - INFO - __main__ -   1500 	 Epoch: 3, Loss:  0.12859737873077393
+07/10/2022 00:37:22 - INFO - __main__ -   ===========================================
+07/10/2022 00:37:22 - INFO - __main__ -   Starting validation
+07/10/2022 00:38:30 - INFO - __main__ -   Accuracy Score = 0.6091763405196241
+07/10/2022 00:38:30 - INFO - __main__ -   F1 Score (Micro) = 0.6844294945560767
+07/10/2022 00:38:30 - INFO - __main__ -   F1 Score (Macro) = 0.6280460473546768
